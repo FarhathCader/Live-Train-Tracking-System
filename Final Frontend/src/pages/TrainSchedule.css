@@ -1,0 +1,146 @@
+
+.trainBox{
+    width: 600px;
+    height: 135px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+}
+
+td{
+    font-size: 20px;
+}
+
+th{
+    font-size: 25px;
+}
+
+.trainLeft{
+    width: 85%;
+}
+
+.trainTop{
+    display: flex;
+    
+    height: 50%;
+    margin: 0;
+    width: 75%;
+    border: 2px dashed blue;
+}
+
+.trainIcon{
+    margin: 10px 15px;
+}
+
+.trainKey{
+    margin: 20px 0 20px 20px;
+    font-size: 15px;
+    color: brown;
+}
+
+.trainType{
+    margin: 20px 0 20px 20px;
+    font-size: 15px;
+    color: brown;
+}
+
+.trainValue1{
+    margin: 20px 10px 20px 5px;
+    
+    font-size: 15px;
+    color: purple;
+}
+
+.trainValue2{
+    margin: 20px 10px 20px 5px; 
+    font-size: 18px;
+    color: purple;
+}
+
+.trainTime{
+    margin: 20px;
+}
+
+#time{
+    margin-left: 25px;
+}
+
+.trainBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+}
+
+.startStation{
+    margin: 20px;
+    width: 125px;
+    font-size: 35px;
+    color: green;
+    font-weight: 300;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.dash{
+    width: 10px;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+.endStation{
+    margin: 20px;
+    margin-left: 40px;
+    width: 225px;
+    font-size: 35px;
+    color: green;
+    font-weight: 300;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.trainButtonView{
+    width: 60px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.trainButtonView:hover{
+    background-color: rgb(169, 243, 21);
+    cursor:pointer;
+}
+
+.trainButtonEdit{
+    width: 60px;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.trainButtonEdit:hover{
+    background-color: rgb(161, 226, 248);
+    cursor:pointer;
+}
+
+.trainButtonDelete{
+    width: 60px;
+    background-color: rgb(239, 20, 20);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.trainButtonDelete:hover{
+    background-color: rgb(224, 95, 198);
+    cursor:pointer;
+}
