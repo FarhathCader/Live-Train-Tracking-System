@@ -63,17 +63,13 @@ public class UserImpl implements UserService {
 
             if (password.equals(encodedPassword)) {
                 Optional<User> user1 = userRepository.findOneByEmailAndPassword(userx.getEmail(), encodedPassword);
-                if(user1 == null) user1 = userRepository.findOneByEmailAndPassword(userx.getUsername(), encodedPassword);
-                if (user1 != null) {
-                    return new LoginResponse("Login Success", true);
-                } else {
-                    return new LoginResponse("Login Failed", false);
-                }
+                if(user1.isEmpty()) user1 = userRepository.findOneByEmailAndPassword(userx.getUsername(), encodedPassword);
+                return user1.map(value -> new LoginResponse("Login Success", true, value)).orElseGet(() -> new LoginResponse("Login Failed", false, null));
             } else {
-                return new LoginResponse("password Not Match  "+ password +  " " + encodedPassword, false);
+                return new LoginResponse("password Not Match  "+ password +  " " + encodedPassword, false, null);
             }
         }else {
-            return new LoginResponse("User Name or Email not exits", false);
+            return new LoginResponse("User Name or Email not exits", false,null);
         }
     }
 
