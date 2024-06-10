@@ -12,7 +12,7 @@ export default function Menu() {
 
 <div >
   
-<div className="container-width" style={{marginTop: '40px' }}>
+<div className="container-width" style={{marginTop: '60px' }}>
   <header className="pb-3 mb-4 border-bottom">
     <a href="/" className="d-flex align-items-center text-body-emphasis text-decoration-none">
       <img src={train_icon} style={{width: '60px',height: '60px' }}/>
